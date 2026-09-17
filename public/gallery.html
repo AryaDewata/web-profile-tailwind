@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- Informasi Dasar -->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="language" content="id">
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <meta name="author" content="Made Arya Astawa">
+
+    <meta name="description"
+        content="Galeri fotografi Made Arya Astawa yang menampilkan berbagai karya fotografi alam, aktivitas, lanskap, dan momen lainnya.">
+
+    <meta name="keywords"
+        content="Made Arya Astawa, galeri fotografi, fotografi, portfolio fotografi, fotografi alam, fotografi lanskap">
+
+    <!-- Judul Halaman -->
+    <title>
+        Galeri Fotografi | Made Arya Astawa
+    </title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://profile-made-arya-astawa.vercel.app/gallery.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:locale" content="id_ID">
+
+    <meta property="og:title" content="Galeri Fotografi | Made Arya Astawa">
+
+    <meta property="og:description"
+        content="Galeri fotografi Made Arya Astawa yang menampilkan berbagai karya fotografi alam, aktivitas, lanskap, dan momen lainnya.">
+
+    <meta property="og:url" content="https://profile-made-arya-astawa.vercel.app/gallery.html">
+
+    <meta property="og:site_name" content="Made Arya Astawa">
+
+    <meta property="og:image" content="https://profile-made-arya-astawa.vercel.app/images/og-image.jpg">
+
+    <meta property="og:image:alt" content="Galeri Fotografi Made Arya Astawa">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Galeri Fotografi | Made Arya Astawa">
+
+    <meta name="twitter:description"
+        content="Galeri fotografi Made Arya Astawa yang menampilkan berbagai karya fotografi.">
+
+    <meta name="twitter:image" content="https://profile-made-arya-astawa.vercel.app/images/og-image.jpg">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+
+<body class="bg-stone-50 text-stone-900">
+
+    <!-- Header -->
+    <header class="border-b border-stone-200 dark:border-stone-800">
+        <nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
+
+            <a href="#beranda"
+                class="font-bold hover:text-emerald-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
+                Made Arya Astawa
+            </a>
+
+            <div class="hidden gap-6 text-sm md:flex">
+                <a href="#tentang" class="hover:text-emerald-600">
+                    Tentang
+                </a>
+
+                <a href="#keahlian" class="hover:text-emerald-600">
+                    Keahlian
+                </a>
+
+                <a href="#proyek" class="hover:text-emerald-600">
+                    Proyek
+                </a>
+
+                <a href="#fotografi" class="hover:text-emerald-600">
+                    Fotografi
+                </a>
+
+                <a href="#kontak" class="hover:text-emerald-600">
+                    Kontak
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero Gallery -->
+        <section class="mx-auto max-w-6xl px-6 py-16">
+
+            <div class="max-w-2xl">
+
+                <p class="text-sm font-medium text-emerald-600">
+                    Fotografi
+                </p>
+
+                <h1 class="mt-3 text-3xl font-bold tracking-tight
+                    sm:text-4xl">
+                    Galeri Fotografi
+                </h1>
+
+                <p class="mt-4 text-base leading-7 text-stone-600">
+                    Kumpulan foto yang saya abadikan dari berbagai
+                    momen, tempat, aktivitas, dan lingkungan sekitar.
+                </p>
+
+            </div>
+
+
+            <!-- Filter -->
+            <div class="mt-4 flex flex-wrap items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <input type="radio" name="filter" value="semua" checked aria-label="Semua"
+                        class="h-4 w-4 cursor-pointer accent-emerald-600">
+                    <span class="text-sm font-medium text-stone-700">Semua</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="radio" name="filter" value="alam" aria-label="Alam"
+                        class="h-4 w-4 cursor-pointer accent-emerald-600">
+                    <span class="text-sm font-medium text-stone-700">Alam</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="radio" name="filter" value="budaya" aria-label="Budaya"
+                        class="h-4 w-4 cursor-pointer accent-emerald-600">
+                    <span class="text-sm font-medium text-stone-700">Budaya</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="radio" name="filter" value="aktivitas" aria-label="Aktivitas"
+                        class="h-4 w-4 cursor-pointer accent-emerald-600">
+                    <span class="text-sm font-medium text-stone-700">Aktivitas</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="radio" name="filter" value="interior" aria-label="Interior"
+                        class="h-4 w-4 cursor-pointer accent-emerald-600">
+                    <span class="text-sm font-medium text-stone-700">Interior</span>
+                </div>
+            </div>
+
+
+            <!-- Gallery -->
+            <div id="galeri" class="mt-8 grid grid-cols-1 gap-5
+                    sm:grid-cols-2 lg:grid-cols-4">
+
+                <!-- Foto 1 -->
+                <figure class="foto interior budaya">
+                    <img src="./images/1.jpg" alt="Fotografi alam" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+
+                <!-- Foto 2 -->
+                <figure class="foto interior budaya">
+                    <img src="./images/2.jpg" alt="Fotografi lanskap" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+
+                <!-- Foto 3 -->
+                <figure class="foto alam budaya">
+                    <img src="./images/3.jpg" alt="Fotografi aktivitas" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+
+                <!-- Foto 4 -->
+                <figure class="foto alam budaya">
+                    <img src="./images/4.jpg" alt="Fotografi alam" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+
+                <!-- Foto 5 -->
+                <figure class="foto budaya">
+                    <img src="./images/5.jpg" alt="Fotografi aktivitas" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+
+                <!-- Foto 6 -->
+                <figure class="foto alam">
+                    <img src="./images/6.jpg" alt="Fotografi lanskap" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+
+                <!-- Foto 7 -->
+                <figure class="foto budaya aktivitas">
+                    <img src="./images/7.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+
+                <!-- Foto 8 -->
+                <figure class="foto alam">
+                    <img src="./images/8.jpg" alt="Fotografi alam" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+
+                <!-- Foto 9 -->
+                <figure class="foto budaya">
+                    <img src="./images/9.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 10 -->
+                <figure class="foto interior">
+                    <img src="./images/10.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 11 -->
+                <figure class="foto alam">
+                    <img src="./images/11.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 12 -->
+                <figure class="foto interior budaya">
+                    <img src="./images/12.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 13 -->
+                <figure class="foto interior budaya">
+                    <img src="./images/13.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 14 -->
+                <figure class="foto alam budaya">
+                    <img src="./images/14.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 15 -->
+                <figure class="foto alam">
+                    <img src="./images/15.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 16 -->
+                <figure class="foto alam">
+                    <img src="./images/16.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 17 -->
+                <figure class="foto aktivitas">
+                    <img src="./images/17.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 18 -->
+                <figure class="foto aktivitas">
+                    <img src="./images/18.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 19 -->
+                <figure class="foto aktivitas">
+                    <img src="./images/19.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 20 -->
+                <figure class="foto alam budaya">
+                    <img src="./images/20.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 21 -->
+                <figure class="foto alam budaya">
+                    <img src="./images/21.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 22 -->
+                <figure class="foto alam budaya">
+                    <img src="./images/22.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 23 -->
+                <figure class="foto alam budaya">
+                    <img src="./images/23.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 24 -->
+                <figure class="foto alam">
+                    <img src="./images/24.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+                <!-- Foto 25 -->
+                <figure class="foto alam">
+                    <img src="./images/25.jpg" alt="Fotografi lainnya" loading="lazy" class="aspect-square w-full rounded-xl
+                            object-cover transition duration-300
+                            hover:opacity-80">
+                </figure>
+
+            </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="border-t border-stone-200">
+
+        <div class="mx-auto max-w-6xl px-6 py-8">
+
+            <p class="text-sm text-stone-500">
+                © 2026 Made Arya Astawa. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Filter JavaScript -->
+    <script>
+        const filters = document.querySelectorAll(
+            'input[name="filter"]'
+        );
+
+        const photos = document.querySelectorAll('.foto');
+
+        filters.forEach(filter => {
+            filter.addEventListener('change', () => {
+
+                const category = filter.value;
+
+                photos.forEach(photo => {
+
+                    if (
+                        category === 'semua' ||
+                        photo.classList.contains(category)
+                    ) {
+                        photo.classList.remove('hidden');
+                    } else {
+                        photo.classList.add('hidden');
+                    }
+
+                });
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
